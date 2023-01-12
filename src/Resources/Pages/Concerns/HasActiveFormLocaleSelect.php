@@ -23,7 +23,7 @@ trait HasActiveFormLocaleSelect
             );
     }
 
-    public function getRecordTitle(): ?string
+    public function getRecordTitle(): string
     {
         if ($this->activeFormLocale) {
             $this->record->setLocale($this->activeFormLocale);
